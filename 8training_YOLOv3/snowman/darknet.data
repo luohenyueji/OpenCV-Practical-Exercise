@@ -1,0 +1,6 @@
+classes = 1
+train  = /home/your/darknet/snowman/snowman_train.txt
+valid  = /home/your/darknet/snowman/snowman_test.txt
+names = /home/your/darknet/snowman/classes.names
+backup = /home/your/darknet/snowman/weights/
+

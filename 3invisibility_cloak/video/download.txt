@@ -1,0 +1,1 @@
+https://github.com/luohenyueji/OpenCV-Model-ZOO/tree/master/OpenCV-Practical-Exercise-Model/videos
