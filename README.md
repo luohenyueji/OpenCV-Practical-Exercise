@@ -16,6 +16,8 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[8training_YOLOv3](https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/)|[8深度学习目标检测网络YOLOv3的训练](https://blog.csdn.net/LuohenYJ/article/details/88581335)|-|
 |[9centroid_blob](https://www.learnopencv.com/find-center-of-blob-centroid-using-opencv-cpp-python/)|[9使用OpenCV寻找平面图形的质心](https://blog.csdn.net/LuohenYJ/article/details/88599334)|-|
 |[10HuMoments](https://www.learnopencv.com/shape-matching-using-hu-moments-c-python/)|[10使用Hu矩进行形状匹配](https://blog.csdn.net/LuohenYJ/article/details/88603274)|-|
+|[11QRCode_scanner](https://www.learnopencv.com/opencv-qr-code-scanner-c-and-python/)|[11基于OpenCV的二维码扫描器](https://blog.csdn.net/LuohenYJ/article/details/88663623)|-|
+
 
 
 
