@@ -1,4 +1,4 @@
-# OpenCV-Practical-Exercise/OpenCV实战演练
+# OpenCV-Practical-Exercise
 Reference: https://github.com/spmallick/learnopencv  
 My CSDN blog: https://blog.csdn.net/LuohenYJ  
 Environment: OpenCV(>3.43), C++11, Python3
@@ -17,7 +17,5 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[9centroid_blob](https://www.learnopencv.com/find-center-of-blob-centroid-using-opencv-cpp-python/)|[9使用OpenCV寻找平面图形的质心](https://blog.csdn.net/LuohenYJ/article/details/88599334)|-|
 |[10HuMoments](https://www.learnopencv.com/shape-matching-using-hu-moments-c-python/)|[10使用Hu矩进行形状匹配](https://blog.csdn.net/LuohenYJ/article/details/88603274)|-|
 |[11QRCode_scanner](https://www.learnopencv.com/opencv-qr-code-scanner-c-and-python/)|[11基于OpenCV的二维码扫描器](https://blog.csdn.net/LuohenYJ/article/details/88663623)|-|
-
-
-
+|[12HandPoints_detection](https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/)|[12使用深度学习和OpenCV进行手部关键点检测](https://blog.csdn.net/LuohenYJ/article/details/88849598)|[Model](http://posefs1.perception.cs.cmu.edu/OpenPose/models/hand/pose_iter_102000.caffemodel)|
 
