@@ -22,3 +22,5 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[14OpenCV_SingleTracker](https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/)|[14使用OpenCV实现单目标跟踪](https://blog.csdn.net/LuohenYJ/article/details/89029816)|-|
 |[15GOTURN_SingleTracker](https://www.learnopencv.com/goturn-deep-learning-based-object-tracking/)|[15基于深度学习的目标跟踪算法GOTURN](https://blog.csdn.net/LuohenYJ/article/details/89083351)|[Model](https://github.com/spmallick/goturn-files)|
 |[16OpenCV_MultiTracker](https://www.learnopencv.com/multitracker-multiple-object-tracking-using-opencv-c-python/)|[16使用OpenCV实现多目标跟踪](https://blog.csdn.net/LuohenYJ/article/details/89105370)|-|
+|[17OpenCV_Colorization](https://www.learnopencv.com/convolutional-neural-network-based-image-colorization-using-opencv/)|[17基于卷积神经网络的OpenCV图像着色](https://blog.csdn.net/LuohenYJ/article/details/89186195)|[Model](https://people.eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v2/)|
+
