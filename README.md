@@ -27,3 +27,4 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[19OpenCV_Align](https://www.learnopencv.com/image-alignment-feature-based-using-opencv-c-python/)|[19使用OpenCV实现基于特征的图像对齐](https://blog.csdn.net/LuohenYJ/article/details/89351966)|-|
 |[20OpenCV_ECCAlignment](https://www.learnopencv.com/image-alignment-ecc-in-opencv-c-python/)|[20使用OpenCV实现基于增强相关系数最大化的图像对齐](https://blog.csdn.net/LuohenYJ/article/details/89455660)|-|
 |[21OpenCV_EigenFace](https://www.learnopencv.com/eigenface-using-opencv-c-python/)|[21使用OpenCV的Eigenface](https://blog.csdn.net/LuohenYJ/article/details/89479531)|[Image](https://github.com/luohenyueji/OpenCV-ML-Model/tree/master/OpenCV-Practical-Exercise-Model/images)|
+|[22reconstructFace](https://www.learnopencv.com/face-reconstruction-using-eigenfaces-cpp-python/)|[22使用EigenFaces进行人脸重建](https://blog.csdn.net/LuohenYJ/article/details/89496629)|[Image](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)|
