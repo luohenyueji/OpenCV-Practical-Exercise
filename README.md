@@ -32,3 +32,4 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[24OpenCV_ExposureFusion](https://www.learnopencv.com/exposure-fusion-using-opencv-cpp-python/)|[24使用OpenCV进行曝光融合](https://blog.csdn.net/LuohenYJ/article/details/89840655)|[Image](https://github.com/luohenyueji/OpenCV-ML-Model/blob/master/OpenCV-Practical-Exercise-Model/images)|
 |[25OpenCV_SeamlessCloning](https://www.learnopencv.com/seamless-cloning-using-opencv-python-cpp/)|[25使用OpenCV进行泊松克隆](https://blog.csdn.net/LuohenYJ/article/details/89850012)|-|
 |[26OpenCV_SelectiveSearch](https://www.learnopencv.com/selective-search-for-object-detection-cpp-python/)|[26基于OpenCV实现选择性搜索算法](https://blog.csdn.net/LuohenYJ/article/details/89883731)|-|
+|[27OpenCV_forEach](https://www.learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/)|[27在OpenCV下使用forEach进行并行像素访问](https://blog.csdn.net/LuohenYJ/article/details/89920587)|-|
