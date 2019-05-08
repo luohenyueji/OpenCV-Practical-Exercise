@@ -33,3 +33,4 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[25OpenCV_SeamlessCloning](https://www.learnopencv.com/seamless-cloning-using-opencv-python-cpp/)|[25使用OpenCV进行泊松克隆](https://blog.csdn.net/LuohenYJ/article/details/89850012)|-|
 |[26OpenCV_SelectiveSearch](https://www.learnopencv.com/selective-search-for-object-detection-cpp-python/)|[26基于OpenCV实现选择性搜索算法](https://blog.csdn.net/LuohenYJ/article/details/89883731)|-|
 |[27OpenCV_forEach](https://www.learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/)|[27在OpenCV下使用forEach进行并行像素访问](https://blog.csdn.net/LuohenYJ/article/details/89920587)|-|
+|[28OpenCV_cvui](https://www.learnopencv.com/cvui-gui-lib-built-on-top-of-opencv-drawing-primitives/)|[28基于OpenCV的GUI库cvui](https://blog.csdn.net/LuohenYJ/article/details/89963640)|-|
