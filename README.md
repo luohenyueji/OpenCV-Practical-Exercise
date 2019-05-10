@@ -35,3 +35,4 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[27OpenCV_forEach](https://www.learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/)|[27在OpenCV下使用forEach进行并行像素访问](https://blog.csdn.net/LuohenYJ/article/details/89920587)|-|
 |[28OpenCV_cvui](https://www.learnopencv.com/cvui-gui-lib-built-on-top-of-opencv-drawing-primitives/)|[28基于OpenCV的GUI库cvui](https://blog.csdn.net/LuohenYJ/article/details/89963640)|-|
 |[29OpenCV_RedEyeRemoveri](https://www.learnopencv.com/automatic-red-eye-remover-using-opencv-cpp-python/)|[29使用OpenCV实现红眼自动去除](https://blog.csdn.net/LuohenYJ/article/details/90035284)|-|
+|[30OpenCV_FillHoles](https://www.learnopencv.com/filling-holes-in-an-image-using-opencv-python-c/)|[30使用OpenCV实现图像孔洞填充](https://blog.csdn.net/LuohenYJ/article/details/90060866)|-|
