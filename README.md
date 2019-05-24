@@ -37,3 +37,4 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[29OpenCV_RedEyeRemoveri](https://www.learnopencv.com/automatic-red-eye-remover-using-opencv-cpp-python/)|[29使用OpenCV实现红眼自动去除](https://blog.csdn.net/LuohenYJ/article/details/90035284)|-|
 |[30OpenCV_FillHoles](https://www.learnopencv.com/filling-holes-in-an-image-using-opencv-python-c/)|[30使用OpenCV实现图像孔洞填充](https://blog.csdn.net/LuohenYJ/article/details/90060866)|-|
 |[31OpenCV_WarpTriangle](https://www.learnopencv.com/warp-one-triangle-to-another-using-opencv-c-python/)|[31使用OpenCV将一个三角形仿射变换到另一个三角形](https://blog.csdn.net/LuohenYJ/article/details/90476244)|-|
+|[32OpenCV_NonPhotorealisticRendering](https://www.learnopencv.com/non-photorealistic-rendering-using-opencv-python-c/)|[32使用OpenCV进行非真实感渲染](https://blog.csdn.net/LuohenYJ/article/details/90516902)|-|
