@@ -40,3 +40,4 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[32OpenCV_NonPhotorealisticRendering](https://www.learnopencv.com/non-photorealistic-rendering-using-opencv-python-c/)|[32使用OpenCV进行非真实感渲染](https://blog.csdn.net/LuohenYJ/article/details/90516902)|-|
 |[33OpenCV_HoughTransform](https://www.learnopencv.com/hough-transform-with-opencv-c-python/)|[33使用OpenCV进行Hough变换](https://blog.csdn.net/LuohenYJ/article/details/90606381)|-|
 |[34OpenCV_Inpainting](https://www.learnopencv.com/image-inpainting-with-opencv-c-python/)|[34使用OpenCV进行图像修复](https://blog.csdn.net/LuohenYJ/article/details/90640654)|-|
+|[35 OpenCV_Tesseract](https://www.learnopencv.com/deep-learning-based-text-recognition-ocr-using-tesseract-and-opencv/)|[35使用Tesseract和OpenCV实现文本识别](https://blog.csdn.net/LuohenYJ/article/details/96116032)|-|
