@@ -42,3 +42,4 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[34OpenCV_Inpainting](https://www.learnopencv.com/image-inpainting-with-opencv-c-python/)|[34使用OpenCV进行图像修复](https://blog.csdn.net/LuohenYJ/article/details/90640654)|-|
 |[35OpenCV_Tesseract](https://www.learnopencv.com/deep-learning-based-text-recognition-ocr-using-tesseract-and-opencv/)|[35使用Tesseract和OpenCV实现文本识别](https://blog.csdn.net/LuohenYJ/article/details/96116032)|-|
 |[36OpenCV_BackgroundEstimation](https://www.learnopencv.com/simple-background-estimation-in-videos-using-opencv-c-python/)|[36使用OpenCV在视频中实现简单背景估计](https://blog.csdn.net/LuohenYJ/article/details/100161690)|[Video](https://github.com/luohenyueji/OpenCV-ML-Model/blob/master/OpenCV-Practical-Exercise-Model/videos/36OpenCV_BackgroundEstimation.7z)|
+|[37OpenCV_BRISQUE](https://www.learnopencv.com/image-quality-assessment-brisque/)|[37图像质量评价BRISQUE](https://blog.csdn.net/LuohenYJ/article/details/104582701)|-|
