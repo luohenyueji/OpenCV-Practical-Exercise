@@ -46,3 +46,4 @@ Environment: OpenCV(>3.43), C++11, Python3
 |[38OpenCV_CameraCalibration](https://www.learnopencv.com/camera-calibration-using-opencv/)|[38基于OpenCV的相机标定](https://blog.csdn.net/LuohenYJ/article/details/104697062)|-|
 |[39OpenCV_ArUco](https://www.learnopencv.com/augmented-reality-using-aruco-markers-in-opencv-c-python/)|[39在OpenCV中使用ArUco标记的增强现实](https://blog.csdn.net/LuohenYJ/article/details/105228916)|-|
 |[40OpenCV (C++ vs Python) vs MATLAB for Computer Vision](https://www.learnopencv.com/opencv-c-vs-python-vs-matlab-for-computer-vision/)|[40计算机视觉工具对比](https://blog.csdn.net/LuohenYJ/article/details/105979915)|-|
+|[41Embedded Computer Vision: Which device should you choose?](https://www.learnopencv.com/embedded-computer-vision-which-device-should-you-choose/)|[41嵌入式计算机视觉设备选择](https://blog.csdn.net/LuohenYJ/article/details/106042898)|-|
