@@ -1,11 +1,13 @@
 # OpenCV-Practical-Exercise
-**Reference**
-[https://github.com/spmallick/learnopencv](https://github.com/spmallick/learnopencv)  
-[https://github.com/opencv/opencv_contrib](https://github.com/opencv/opencv_contrib)  
+**Reference**  
++ > [learnopencv](https://github.com/spmallick/learnopencv)   
++ > [opencv_contrib](https://github.com/opencv/opencv_contrib)   
+
 My CSDN blog: [https://blog.csdn.net/LuohenYJ](https://blog.csdn.net/LuohenYJ)  
 Environment: OpenCV(>3.4.11), C++11, Python3.7
 
 ---------------------------
+
 |Items|项目|Resources|
 |------|------|:------:|
 |[1age_gender](https://www.learnopencv.com/age-gender-classification-using-opencv-deep-learning-c-python/)|[1基于深度学习识别人脸性别和年龄](https://blog.csdn.net/LuohenYJ/article/details/88134634)|[Model](https://github.com/luohenyueji/OpenCV-Model-ZOO/tree/master/OpenCV-Practical-Exercise-Model)|
@@ -50,4 +52,4 @@ Environment: OpenCV(>3.4.11), C++11, Python3.7
 |[40OpenCV (C++ vs Python) vs MATLAB for Computer Vision](https://www.learnopencv.com/opencv-c-vs-python-vs-matlab-for-computer-vision/)|[40计算机视觉工具对比](https://blog.csdn.net/LuohenYJ/article/details/105979915)|-|
 |[41Embedded Computer Vision: Which device should you choose?](https://www.learnopencv.com/embedded-computer-vision-which-device-should-you-choose/)|[41嵌入式计算机视觉设备选择](https://blog.csdn.net/LuohenYJ/article/details/106042898)|-|
 |[42Technical Aspects of a Digital SLR](https://www.learnopencv.com/technical-aspects-of-a-digital-slr/)|[42数码单反相机的技术细节](https://blog.csdn.net/LuohenYJ/article/details/106080633)|-|
-|[43Improved Background-Foreground Segmentation Methods](https://github.com/opencv/opencv_contrib/tree/master/modules/bgsegm)|[43使用OpenCV进行背景分割](https://blog.csdn.net/LuohenYJ/article/details/107962267)|[Video](https://github.com/opencv/opencv/blob/master/samples/data/vtest.avi)|
+|[43Improved Background-Foreground Segmentation Methods](https://github.com/opencv/opencv_contrib/tree/master/modules/bgsegm)|[43使用OpenCV进行背景分割](https://blog.csdn.net/LuohenYJ/article/details/108002515)|[Video](https://github.com/opencv/opencv/blob/master/samples/data/vtest.avi)|
