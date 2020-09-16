@@ -56,4 +56,5 @@ Environment: OpenCV(>3.4.11), C++11, Python3.7
 |[44OpenCV_ImageSuperres](https://github.com/opencv/opencv_contrib/tree/master/modules/dnn_superres)|[44使用OpenCV进行图像超分放大](https://blog.csdn.net/LuohenYJ/article/details/108207700)|[Model](https://github.com/opencv/opencv_contrib/tree/master/modules/dnn_superres)|
 |[45OpenCV_ImgHash](https://github.com/opencv/opencv_contrib/tree/master/modules/img_hash)|[45基于OpenCV实现图像哈希算法](https://blog.csdn.net/LuohenYJ/article/details/108267229)|-|
 |[46OpenCV_IntensityTransform](https://github.com/opencv/opencv_contrib/tree/master/modules/intensity_transform)|[46在OpenCV下应用图像强度变换实现图像对比度均衡](https://blog.csdn.net/LuohenYJ/article/details/108521449)|-|
+|[47OpenCV_SaliencyObject](https://github.com/opencv/opencv_contrib/tree/master/modules/saliency)|[47基于OpenCV实现视觉显著性检测](https://blog.csdn.net/LuohenYJ/article/details/108607926)|[Video](https://github.com/opencv/opencv/blob/master/samples/data/vtest.avi)|
 
