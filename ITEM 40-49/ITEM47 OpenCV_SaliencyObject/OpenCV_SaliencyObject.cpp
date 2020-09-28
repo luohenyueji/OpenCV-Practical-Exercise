@@ -10,7 +10,7 @@ int main()
 {
 	// 显著性检测算法
 	// 可选：SPECTRAL_RESIDUAL，FINE_GRAINED，BING，BinWangApr2014
-	String saliency_algorithm = "FINE_GRAINED";
+	String saliency_algorithm = "BING";
 	// 检测视频或者图像
 	String video_name = "video/vtest.avi";
 	// String video_name = "video/dog.jpg";
@@ -138,9 +138,13 @@ int main()
 			saliencyAlgorithm.dynamicCast<ObjectnessBING>()->setTrainingPath(training_path);
 			// 将算法检测结果保存在Results文件夹内
 			saliencyAlgorithm.dynamicCast<ObjectnessBING>()->setBBResDir("Results");
+			// 设置非极大值抑制，值越大检测到的目标越少，检测速度越快
+			saliencyAlgorithm.dynamicCast<ObjectnessBING>()->setNSS(50);
 
 			// 计算显著性
 			double start = static_cast<double>(getTickCount());
+			// 基于三个颜色空间进行检测，可以只检测一个空间，把training_path下其他空间模型删除即可
+			// 如只保留ObjNessB2W8MAXBGR前缀的文件，算法耗时只有原来的一半
 			bool success = saliencyAlgorithm->computeSaliency(image, saliencyMap);
 			double duration = ((double)getTickCount() - start) / getTickFrequency();
 			cout << "computeSaliency cost time is: " << duration * 1000 << "ms" << endl;
