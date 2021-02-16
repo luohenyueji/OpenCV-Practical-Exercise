@@ -1,0 +1,4 @@
+https://github.com/luohenyueji/OpenCV-ML-Model/blob/master/OpenCV-Practical-Exercise-Model/50OpenCV_StereoCamera.rar
+
+or:
+https://learnopencv.com/making-a-low-cost-stereo-camera-using-opencv/
