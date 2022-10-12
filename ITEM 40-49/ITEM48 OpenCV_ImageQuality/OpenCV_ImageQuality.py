@@ -53,7 +53,6 @@ def PSNR(img1, img2):
     # quality_map = obj.getQualityMap()
     # 计算均值
     score = np.mean([i for i in result_static if (i != 0 and not np.isinf(i))])
-    score = 0 if np.isnan(score) else score
     return score
 
 
@@ -116,9 +115,9 @@ def main():
         return
     # 结果越小，检测图像和基准图像的差距越小
     MSE(img1, img2)
-    # 结果越小，检测图像和基准图像的差距越小
+    # 结果越小，检测图像和基准图像的差距越大
     PSNR(img1, img2)
-    # 结果为一个0到1之间的数，越大表示检测图像和基准图像的差距越小
+    # 结果为一个0到1之间的数，越大表示检测图像和基准图像的差距越大
     GMSD(img1, img2)
     # 结果为一个0到1之间的数，越大表示检测图像和基准图像的差距越小
     SSIM(img1, img2)
