@@ -4,12 +4,12 @@
 using namespace std;
 using namespace cv;
 
-// ¼ÆËã½á¹û¾ùÖµ
+// è®¡ç®—ç»“æœå‡å€¼
 double calMEAN(Scalar result)
 {
 	int i = 0;
 	double sum = 0;
-	// ¼ÆËã×ÜºÍ
+	// è®¡ç®—æ€»å’Œ
 	for (auto val : result.val)
 	{
 		if (0 == val || isinf(val))
@@ -22,20 +22,20 @@ double calMEAN(Scalar result)
 	return sum / i;
 }
 
-// ¾ù·½Îó²î MSE
+// å‡æ–¹è¯¯å·® MSE
 double MSE(Mat img1, Mat img2)
 {
 	// output quality map
-	// ÖÊÁ¿½á¹ûÍ¼
-	// ÖÊÁ¿½á¹ûÍ¼quality_map¾ÍÊÇ¼ì²âÍ¼ÏñºÍ»ù×¼Í¼Ïñ¸÷¸öÏñËØµã²îÖµÍ¼Ïñ
+	// è´¨é‡ç»“æœå›¾
+	// è´¨é‡ç»“æœå›¾quality_mapå°±æ˜¯æ£€æµ‹å›¾åƒå’ŒåŸºå‡†å›¾åƒå„ä¸ªåƒç´ ç‚¹å·®å€¼å›¾åƒ
 	cv::Mat quality_map;
 	// compute MSE via static method
 	// cv::noArray() if not interested in output quality maps
-	// ¾²Ì¬·½·¨£¬Ò»²½µ½Î»
-	// Èç¹û²»Ïë»ñµÃÖÊÁ¿½á¹ûÍ¼£¬½«quality_mapÌæ»»ÎªnoArray()
+	// é™æ€æ–¹æ³•ï¼Œä¸€æ­¥åˆ°ä½
+	// å¦‚æœä¸æƒ³è·å¾—è´¨é‡ç»“æœå›¾ï¼Œå°†quality_mapæ›¿æ¢ä¸ºnoArray()
 	cv::Scalar result_static = quality::QualityMSE::compute(img1, img2, quality_map);
 
-	/* ÁíÍâÒ»ÖÖ¶¯Ì¬¼ÆËãµÄ·½·¨
+	/* å¦å¤–ä¸€ç§åŠ¨æ€è®¡ç®—çš„æ–¹æ³•
 	// alternatively, compute MSE via instance
 	cv::Ptr<quality::QualityBase> ptr = quality::QualityMSE::create(img1);
 	// compute MSE, compare img1 vs img2
@@ -46,18 +46,18 @@ double MSE(Mat img1, Mat img2)
 	return calMEAN(result_static);
 }
 
-// ·åÖµĞÅÔë±È PSNR
+// å³°å€¼ä¿¡å™ªæ¯” PSNR
 double PSNR(Mat img1, Mat img2)
 {
-	// ÖÊÁ¿½á¹ûÍ¼
-	// ÖÊÁ¿½á¹ûÍ¼quality_map¾ÍÊÇ¼ì²âÍ¼ÏñºÍ»ù×¼Í¼Ïñ¸÷¸öÏñËØµã²îÖµÍ¼Ïñ
+	// è´¨é‡ç»“æœå›¾
+	// è´¨é‡ç»“æœå›¾quality_mapå°±æ˜¯æ£€æµ‹å›¾åƒå’ŒåŸºå‡†å›¾åƒå„ä¸ªåƒç´ ç‚¹å·®å€¼å›¾åƒ
 	cv::Mat quality_map;
-	// ¾²Ì¬·½·¨£¬Ò»²½µ½Î»
-	// Èç¹û²»Ïë»ñµÃÖÊÁ¿½á¹ûÍ¼£¬½«quality_mapÌæ»»ÎªnoArray()
-	// µÚËÄ¸ö²ÎÊıÎªPSNR¼ÆËã¹«Ê½ÖĞµÄMAX£¬¼´Í¼Æ¬¿ÉÄÜµÄ×î´óÏñËØÖµ£¬Í¨³£Îª255
+	// é™æ€æ–¹æ³•ï¼Œä¸€æ­¥åˆ°ä½
+	// å¦‚æœä¸æƒ³è·å¾—è´¨é‡ç»“æœå›¾ï¼Œå°†quality_mapæ›¿æ¢ä¸ºnoArray()
+	// ç¬¬å››ä¸ªå‚æ•°ä¸ºPSNRè®¡ç®—å…¬å¼ä¸­çš„MAXï¼Œå³å›¾ç‰‡å¯èƒ½çš„æœ€å¤§åƒç´ å€¼ï¼Œé€šå¸¸ä¸º255
 	cv::Scalar result_static = quality::QualityPSNR::compute(img1, img2, quality_map, 255.0);
 
-	/* ÁíÍâÒ»ÖÖ¶¯Ì¬¼ÆËãµÄ·½·¨
+	/* å¦å¤–ä¸€ç§åŠ¨æ€è®¡ç®—çš„æ–¹æ³•
 	cv::Ptr<quality::QualityBase> ptr = quality::QualityPSNR::create(img1, 255.0);
 	cv::Scalar result = ptr->compute(img2);
 	ptr->getQualityMap(quality_map);*/
@@ -65,48 +65,48 @@ double PSNR(Mat img1, Mat img2)
 	return calMEAN(result_static);
 }
 
-// Ìİ¶È·ù¶ÈÏàËÆĞÔÆ«²î GMSD
+// æ¢¯åº¦å¹…åº¦ç›¸ä¼¼æ€§åå·® GMSD
 double GMSD(Mat img1, Mat img2)
 {
-	// ÖÊÁ¿½á¹ûÍ¼
-	// ÖÊÁ¿½á¹ûÍ¼quality_map¾ÍÊÇ¼ì²âÍ¼ÏñºÍ»ù×¼Í¼Ïñ¸÷¸öÏñËØµã²îÖµÍ¼Ïñ
+	// è´¨é‡ç»“æœå›¾
+	// è´¨é‡ç»“æœå›¾quality_mapå°±æ˜¯æ£€æµ‹å›¾åƒå’ŒåŸºå‡†å›¾åƒå„ä¸ªåƒç´ ç‚¹å·®å€¼å›¾åƒ
 	cv::Mat quality_map;
-	// ¾²Ì¬·½·¨£¬Ò»²½µ½Î»
-	// Èç¹û²»Ïë»ñµÃÖÊÁ¿½á¹ûÍ¼£¬½«quality_mapÌæ»»ÎªnoArray()
+	// é™æ€æ–¹æ³•ï¼Œä¸€æ­¥åˆ°ä½
+	// å¦‚æœä¸æƒ³è·å¾—è´¨é‡ç»“æœå›¾ï¼Œå°†quality_mapæ›¿æ¢ä¸ºnoArray()
 	cv::Scalar result_static = quality::QualityGMSD::compute(img1, img2, quality_map);
-	/* ÁíÍâÒ»ÖÖ¶¯Ì¬¼ÆËãµÄ·½·¨
+	/* å¦å¤–ä¸€ç§åŠ¨æ€è®¡ç®—çš„æ–¹æ³•
 	cv::Ptr<quality::QualityBase> ptr = quality::QualityGMSD::create(img1);
 	cv::Scalar result = ptr->compute(img2);
 	ptr->getQualityMap(quality_map);*/
 	return calMEAN(result_static);
 }
 
-// ½á¹¹ÏàËÆĞÔ SSIM
+// ç»“æ„ç›¸ä¼¼æ€§ SSIM
 double SSIM(Mat img1, Mat img2)
 {
-	// ÖÊÁ¿½á¹ûÍ¼
-	// ÖÊÁ¿½á¹ûÍ¼quality_map¾ÍÊÇ¼ì²âÍ¼ÏñºÍ»ù×¼Í¼Ïñ¸÷¸öÏñËØµã²îÖµÍ¼Ïñ
+	// è´¨é‡ç»“æœå›¾
+	// è´¨é‡ç»“æœå›¾quality_mapå°±æ˜¯æ£€æµ‹å›¾åƒå’ŒåŸºå‡†å›¾åƒå„ä¸ªåƒç´ ç‚¹å·®å€¼å›¾åƒ
 	cv::Mat quality_map;
-	// ¾²Ì¬·½·¨£¬Ò»²½µ½Î»
-	// Èç¹û²»Ïë»ñµÃÖÊÁ¿½á¹ûÍ¼£¬½«quality_mapÌæ»»ÎªnoArray()
+	// é™æ€æ–¹æ³•ï¼Œä¸€æ­¥åˆ°ä½
+	// å¦‚æœä¸æƒ³è·å¾—è´¨é‡ç»“æœå›¾ï¼Œå°†quality_mapæ›¿æ¢ä¸ºnoArray()
 	cv::Scalar result_static = quality::QualitySSIM::compute(img1, img2, quality_map);
-	/* ÁíÍâÒ»ÖÖ¶¯Ì¬¼ÆËãµÄ·½·¨
+	/* å¦å¤–ä¸€ç§åŠ¨æ€è®¡ç®—çš„æ–¹æ³•
 	cv::Ptr<quality::QualityBase> ptr = quality::QualitySSIM::create(img1);
 	cv::Scalar result = ptr->compute(img2);
 	ptr->getQualityMap(quality_map);*/
 	return calMEAN(result_static);
 }
 
-// Ã¤/ÎŞ²Î¿¼Í¼Ïñ¿Õ¼äÖÊÁ¿ÆÀ¹ÀÆ÷ BRISQUE
+// ç›²/æ— å‚è€ƒå›¾åƒç©ºé—´è´¨é‡è¯„ä¼°å™¨ BRISQUE
 double BRISQUE(Mat img)
 {
 	// path to the trained model
 	cv::String model_path = "./model/brisque_model_live.yml";
 	// path to range file
 	cv::String range_path = "./model/brisque_range_live.yml";
-	// ¾²Ì¬¼ÆËã·½·¨
+	// é™æ€è®¡ç®—æ–¹æ³•
 	cv::Scalar result_static = quality::QualityBRISQUE::compute(img, model_path, range_path);
-	/* ÁíÍâÒ»ÖÖ¶¯Ì¬¼ÆËãµÄ·½·¨
+	/* å¦å¤–ä¸€ç§åŠ¨æ€è®¡ç®—çš„æ–¹æ³•
 	cv::Ptr<quality::QualityBase> ptr = quality::QualityBRISQUE::create(model_path, range_path);
 	// computes BRISQUE score for img
 	cv::Scalar result = ptr->compute(img);*/
@@ -115,7 +115,7 @@ double BRISQUE(Mat img)
 
 void qualityCompute(String methodType, Mat img1, Mat img2)
 {
-	// Ëã·¨½á¹ûºÍËã·¨ºÄÊ±
+	// ç®—æ³•ç»“æœå’Œç®—æ³•è€—æ—¶
 	double result;
 	TickMeter costTime;
 
@@ -139,7 +139,7 @@ void qualityCompute(String methodType, Mat img1, Mat img2)
 
 int main()
 {
-	// img1Îª»ù×¼Í¼Ïñ£¬img2Îª¼ì²âÍ¼Ïñ
+	// img1ä¸ºåŸºå‡†å›¾åƒï¼Œimg2ä¸ºæ£€æµ‹å›¾åƒ
 	cv::Mat img1, img2;
 	img1 = cv::imread("image/cut-original-rotated-image.jpg");
 	img2 = cv::imread("image/cut-original-rotated-image.jpg");
@@ -150,16 +150,16 @@ int main()
 		return 0;
 	}
 
-	// ½á¹ûÔ½Ğ¡£¬¼ì²âÍ¼ÏñºÍ»ù×¼Í¼ÏñµÄ²î¾àÔ½Ğ¡
+	// ç»“æœè¶Šå°ï¼Œæ£€æµ‹å›¾åƒå’ŒåŸºå‡†å›¾åƒçš„å·®è·è¶Šå°
 	qualityCompute("MSE", img1, img2);
-	// ½á¹ûÔ½Ğ¡£¬¼ì²âÍ¼ÏñºÍ»ù×¼Í¼ÏñµÄ²î¾àÔ½Ğ¡
+	// ç»“æœè¶Šå°ï¼Œæ£€æµ‹å›¾åƒå’ŒåŸºå‡†å›¾åƒçš„å·®è·è¶Šå¤§
 	qualityCompute("PSNR", img1, img2);
-	// ½á¹ûÎªÒ»¸ö0µ½1Ö®¼äµÄÊı£¬Ô½´ó±íÊ¾¼ì²âÍ¼ÏñºÍ»ù×¼Í¼ÏñµÄ²î¾àÔ½Ğ¡
+	// ç»“æœä¸ºä¸€ä¸ª0åˆ°1ä¹‹é—´çš„æ•°ï¼Œè¶Šå¤§è¡¨ç¤ºæ£€æµ‹å›¾åƒå’ŒåŸºå‡†å›¾åƒçš„å·®è·è¶Šå¤§
 	qualityCompute("GMSD", img1, img2);
-	// ½á¹ûÎªÒ»¸ö0µ½1Ö®¼äµÄÊı£¬Ô½´ó±íÊ¾¼ì²âÍ¼ÏñºÍ»ù×¼Í¼ÏñµÄ²î¾àÔ½Ğ¡
+	// ç»“æœä¸ºä¸€ä¸ª0åˆ°1ä¹‹é—´çš„æ•°ï¼Œè¶Šå¤§è¡¨ç¤ºæ£€æµ‹å›¾åƒå’ŒåŸºå‡†å›¾åƒçš„å·®è·è¶Šå°
 	qualityCompute("SSIM", img1, img2);
-	// BRISQUE²»ĞèÒª»ù×¼Í¼Ïñ
-	// ½á¹ûÎªÒ»¸ö0µ½100Ö®¼äµÄÊı£¬Ô½Ğ¡±íÊ¾¼ì²âÍ¼ÏñÖÊÁ¿Ô½ºÃ
+	// BRISQUEä¸éœ€è¦åŸºå‡†å›¾åƒ
+	// ç»“æœä¸ºä¸€ä¸ª0åˆ°100ä¹‹é—´çš„æ•°ï¼Œè¶Šå°è¡¨ç¤ºæ£€æµ‹å›¾åƒè´¨é‡è¶Šå¥½
 	qualityCompute("BRISQUE", cv::Mat{}, img2);
 	system("pause");
 	return 0;
