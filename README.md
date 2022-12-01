@@ -61,3 +61,4 @@ Environment: OpenCV(>3.4.11), C++11, Python3.7
 |[49OpenCV_StereoDisparity](https://learnopencv.com/introduction-to-epipolar-geometry-and-stereo-vision/)|[49对极几何与立体视觉初探](https://blog.csdn.net/LuohenYJ/article/details/113795379)|-|
 |[50OpenCV_StereoCamera](https://www.learnopencv.com/making-a-low-cost-stereo-camera-using-opencv/)|[50用OpenCV制作低成本立体相机](https://blog.csdn.net/LuohenYJ/article/details/113826424)|[Data](https://github.com/luohenyueji/OpenCV-ML-Model/blob/master/OpenCV-Practical-Exercise-Model/50OpenCV_StereoCamera.rar)|
 |[51OpenCV_Polar](https://docs.opencv.org/master/d4/d35/samples_2cpp_2polar_transforms_8cpp-example.html)|[51基于OpenCV实现图像极坐标变换与逆变换](https://blog.csdn.net/LuohenYJ/article/details/114842373)|-|
+|[52OpenCV_Histogram](https://docs.opencv.org/4.x/d6/dc7/group__imgproc__hist.html)|[52在OpenCV中使用颜色直方图](https://blog.csdn.net/LuohenYJ/article/details/128138434)|-|
